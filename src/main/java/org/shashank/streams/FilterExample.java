@@ -7,23 +7,29 @@ import java.util.stream.Collectors;
 /*
 Streams are used to process collections
 Different methods available -
+Intermediary -
 Stream<T> filter(Predicate<? super T> predicate);
 <R> Stream<R> map(Function<? super T, ? extends R> mapper);
 <R> Stream<R> flatMap(Function<? super T, ? extends Stream<? extends R>> mapper);
 Stream<T> distinct();
 Stream<T> sorted();
+limit(maxSize)
 Stream<T> sorted(Comparator<? super T> comparator);
 Stream<T> peek(Consumer<? super T> action);
+boolean anyMatch(Predicate<? super T> predicate);
+boolean allMatch(Predicate<? super T> predicate);
+boolean noneMatch(Predicate<? super T> predicate);
+Stream concat(Stream1, Stream2);
+
+Terminal -
 void forEach(Consumer<? super T> action);
 Object[] toArray();
 <R, A> R collect(Collector<? super T, A, R> collector);
 Optional<T> min(Comparator<? super T> comparator);
 Optional<T> max(Comparator<? super T> comparator);
 long count();
-boolean anyMatch(Predicate<? super T> predicate);
-boolean allMatch(Predicate<? super T> predicate);
-boolean noneMatch(Predicate<? super T> predicate);
 Optional<T> findFirst();
+Optional<T> findAny();
  */
 
 class Product{
