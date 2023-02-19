@@ -1,4 +1,4 @@
-package org.shashank.lambdas;
+package org.shashank.lambdas.inbuilt.functionalinterfaces;
 
 import java.util.function.Function;
 import java.util.function.Predicate;

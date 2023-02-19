@@ -16,9 +16,6 @@ Stream<T> sorted();
 limit(maxSize)
 Stream<T> sorted(Comparator<? super T> comparator);
 Stream<T> peek(Consumer<? super T> action);
-boolean anyMatch(Predicate<? super T> predicate);
-boolean allMatch(Predicate<? super T> predicate);
-boolean noneMatch(Predicate<? super T> predicate);
 Stream concat(Stream1, Stream2);
 
 Terminal -
@@ -28,6 +25,9 @@ Object[] toArray();
 Optional<T> min(Comparator<? super T> comparator);
 Optional<T> max(Comparator<? super T> comparator);
 long count();
+boolean anyMatch(Predicate<? super T> predicate);
+boolean allMatch(Predicate<? super T> predicate);
+boolean noneMatch(Predicate<? super T> predicate);
 Optional<T> findFirst();
 Optional<T> findAny();
  */

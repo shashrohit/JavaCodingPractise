@@ -12,9 +12,10 @@ public void func2(int a, int b){
 
 (a,b) -> System.out.println(a+b);
 
-public void func3(int a, int b){
+public void func3(int a){
     return a*a;
 }
+
 (a) -> {return a*a;};
 OR
 (a) -> a*a;

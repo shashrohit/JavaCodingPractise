@@ -8,7 +8,7 @@ import java.util.Map;
 
 Hash Map vs Hash Table
 Hash map is non-synchronized whereas Hash Table is synchronized which means only \
-one thread can access an elements at a time.
+one thread can access an element at a time.
 Hash map is not thread safe whereas Hash table is thread safe.
 Hash table performance is poorer compared to Hash map.
 Null keys and values are not allowed in Hash table.

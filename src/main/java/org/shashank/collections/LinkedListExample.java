@@ -10,7 +10,7 @@ Node contains - prev, data, next
 Duplicates allowed, insertion order is preserved
 Null is allowed
 Additional Methods of Linked List class-
-assFirst(Object o)
+addFirst(Object o)
 addLast(Object o)
 removeFirst()
 removeLast()

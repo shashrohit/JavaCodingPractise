@@ -26,6 +26,8 @@ addAll(index, Collection c)
 remove(index)
 get(index)
 set(index, Object o)
+
+Note - Collection interface extends Iterable interface which has iterator() and forEach(Consumer c) methods
  */
 
 import java.util.ArrayList;
