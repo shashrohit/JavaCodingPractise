@@ -1,4 +1,4 @@
-package org.shashank.problems;
+package org.shashank.problems.misc;
 
 // Time - O(max(L1, L2)
 // Space - O(max(L1, L2)

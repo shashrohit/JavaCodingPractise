@@ -1,4 +1,4 @@
-package org.shashank.problems;
+package org.shashank.problems.misc;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
