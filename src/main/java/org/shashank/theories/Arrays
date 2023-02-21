@@ -1,0 +1,26 @@
+<--------------- Arrays -------------------------------->
+Arrays.sort(int[] a) => Sorts the specified array into ascending numerical order.
+Arrays.sort(int[] a, int fromIndex, int toIndex)
+Note - Above accept all primitive type arrays
+
+Arrays.swap(Object[] x, int index1, int index2)
+
+Arrays.binarySearch(int[] a, int key) -> returns index and accepts all primitive type arrays
+
+Arrays.equals(long[] a, long[] a2) -> returns boolean and accepts all primitive type arrays
+
+Arrays.fill(int[] a, int val)
+
+Arrays.fill(int[] a, int fromIndex, int toIndex, int val)
+
+Arrays.copyOf(int[] original, int newLength) -> returns int[] and accepts all primitive types
+Note - also, truncating or padding with zeros  (if necessary) so the copy has the specified length
+
+Arrays.asList(T... a) -> returns List<T>
+List<String> stooges = Arrays.asList("Larry", "Moe", "Curly");
+Arrays.asList: Returns a fixed-size list backed by the specified array.
+You can't add to it; you can't remove from it. You can't structurally modify the List.
+Create a LinkedList, which supports faster remove.
+List<String> list = new LinkedList<String>(Arrays.asList(split));
+
+Arrays.toString(int[] a) _> returns String
