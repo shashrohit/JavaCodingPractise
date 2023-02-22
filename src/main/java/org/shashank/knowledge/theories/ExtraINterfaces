@@ -1,0 +1,17 @@
+Cloneable
+The class that implements java.lang.Cloneable assures that it conforms to the
+contract of Object.clone() method to copy the instances of the class.
+
+Readable
+If a class implements java.lang.Readable assures that it provides source of characters
+to read from. The user can read the source of characters using its read() method.
+
+Appendable
+This java.lang.Appendable interface specifies the contract to append character values
+to the implementing class object. The widely used StringBuffer and StringBuilder
+implement this interface to mutate the sequence of characters.
+
+Closeable
+java.io.Closeable interface provides the contract for the user to close a
+source or a destination of data. It declares its contract through close() method
+which is invoked to release the currently acquired resources.

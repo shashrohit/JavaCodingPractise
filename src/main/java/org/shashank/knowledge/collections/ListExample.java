@@ -18,7 +18,8 @@ isEmpty()
 size()
 contains(Object o)
 containsAll(Collection c)
-toArray() -> return Object array
+Object[] toArray() -> return Object array
+<T> T[] toArray(T[] a)
 
 List Interface methods (Additional)
 add(index, Object o)
@@ -26,6 +27,7 @@ addAll(index, Collection c)
 remove(index)
 get(index)
 set(index, Object o)
+sort(Comparator<? super E> c) -> always takes comparator
 
 Note - Collection interface extends Iterable interface which has iterator() and forEach(Consumer c) methods
  */
