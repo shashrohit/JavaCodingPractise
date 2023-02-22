@@ -1,4 +1,4 @@
-package org.shashank.problems.misc;
+package org.shashank.problems.strings;
 
 import java.util.HashMap;
 import java.util.Map;
