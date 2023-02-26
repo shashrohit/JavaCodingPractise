@@ -19,7 +19,7 @@ StringJoiner joiner = new StringJoiner(" ");
 for(String word: words) joiner.add(word);
    return joiner.toString();
 
-Comparators can be replaces as -
+Comparators OR Lambdas can be replaced as -
 al.sort((a,b)-> a.compareTo(b));
 Or
 al.sort(String::compareTo);

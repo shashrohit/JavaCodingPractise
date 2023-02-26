@@ -11,7 +11,7 @@ Arrays.binarySearch(int[] a, int key) -> returns index and accepts all primitive
 
 Arrays.equals(long[] a, long[] a2) -> returns boolean and accepts all primitive type arrays
 
-Arrays.copyOf(int[] original, int newLength) -> returns int[] and accepts all primitive types
+int[] Arrays.copyOf(int[] original, int newLength) -> returns int[] and accepts all primitive types
 Note - also, truncating or padding with zeros  (if necessary) so the copy has the specified length
 
 Arrays.asList(T... a) -> returns List<T>
