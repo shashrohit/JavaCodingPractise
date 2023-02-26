@@ -23,12 +23,11 @@ containsValue(v)
 isEmpty()
 size()
 clear()
-values()-> returns set object of values
-keyset() -> returns set object of keys
-entryset() -> returns entries
-Entry is an interface which extends Map interface
+Collection<V> values()-> returns Collection of values
+Set<K> keySet() -> returns Set of keys
+Set<Map.Entry<K,V>> entrySet() -> returns set of entries
 
-Entry interface methods
+Entry is an interface which extends Map interface
 getKey()
 getValue()
 setValue(Object o)

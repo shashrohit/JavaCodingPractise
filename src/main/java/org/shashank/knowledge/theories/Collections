@@ -1,18 +1,9 @@
 static void sort(List<T> list) -
 Sorts the specified list into ascending order, according to the natural ordering.
 All elements in the list must implement the Comparable interface.
-Furthermore, all elements in the list must be mutually comparable
-(that is, e1.compareTo(e2) must not throw a ClassCastException for any elements
-e1 and e2 in the list)
-
 
 static void sort(List<T> list, Comparator<? super T> c) -
 Sorts the specified list according to the order induced by the specified comparator.
-All elements in the list must be mutually comparable using the specified comparator
-(that is, c.compare(e1, e2) must not throw a ClassCastException for any elements
-e1 and e2 in the list)
-
-Alternatively, list.sort(Comparator<? super T> c) (not static)
 
 static int binarySearch(List<? extends Comparable<? super T>> list, T key) -
 The list must be sorted into ascending order according to the natural ordering prior to making this call.
@@ -25,21 +16,12 @@ Reverses the order of the elements in the specified list.
 
 static void swap(List<?> list, int i, int j)
 
-static <T> void fill(List<? super T> list, T obj) -
-Replaces all of the elements of the specified list with the specified element.
-
 static <T> void copy(List<? super T> dest, List<? extends T> src) -
 Copies all of the elements from one list into another.
 
 static <T extends Object & Comparable<? super T>> T min(Collection<? extends T> coll)
 Returns the minimum element of the given collection, according to the natural ordering.
 All elements in the collection must implement the Comparable interface.
-Furthermore, all elements in the collection must be mutually comparable
-(that is, e1.compareTo(e2) must not throw a ClassCastException for any elements
-e1 and e2 in the collection)
-
 static <T> T min(Collection<? extends T> coll, Comparator<? super T> comp)
 
 static boolean replaceAll(List<T> list, T oldVal, T newVal)
-
-

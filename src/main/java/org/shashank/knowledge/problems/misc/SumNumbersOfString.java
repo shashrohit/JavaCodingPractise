@@ -2,20 +2,22 @@ package org.shashank.knowledge.problems.misc;
 
 public class SumNumbersOfString {
 
-    public static int sum(String str){
-        int sum = 0;
-        String cur_total = "";
-        char[] charSequence = str.toCharArray();
+    public static long sum(String str){
 
-        for (char c : charSequence) {
-            if (Character.isDigit(c)) {
-                cur_total += c;
-            } else if (!cur_total.equals("")) {
-                sum += Integer.parseInt(cur_total);
-                cur_total = "";
+        long sum = 0;
+        String currentTotal = "";
+        char c;
+        for(int i=0; i< str.length(); i++){
+            c = str.charAt(i);
+            if(!Character.isAlphabetic(c)){
+                currentTotal += c;
+            }
+            else if(!currentTotal.equals("")){
+                sum += Long.parseLong(currentTotal);
+                currentTotal = "";
             }
         }
-        sum += Integer.parseInt(cur_total);
+        if(!currentTotal.equals("")) sum += Long.parseLong(currentTotal);
         return sum;
     }
 

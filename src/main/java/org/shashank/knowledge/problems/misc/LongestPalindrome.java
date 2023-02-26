@@ -11,7 +11,7 @@ public class LongestPalindrome {
         for(int i=0; i< n; i++){
             j = n-1;
             while(i < j){
-                if(str.charAt(i) == str.charAt(i) && longestPalindrome.length() < j-i+1){
+                if(str.charAt(i) == str.charAt(j) && longestPalindrome.length() < j-i+1){
                     subString = str.substring(i, j+1);
                 }
                 revSubString = new StringBuilder(subString).reverse().toString();;

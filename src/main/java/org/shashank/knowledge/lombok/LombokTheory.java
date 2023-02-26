@@ -2,11 +2,11 @@ package org.shashank.knowledge.lombok;
 
 /*
 Getters/Setters and Constructors -
-By adding the @Getter and @Setter annotations, Lombok generates these for all the fields of the class.
+By adding the @Getter and @Setter annotations, Lombok generates these for all the fields.
 @NoArgsConstructor will lead to an empty constructor generation.
 
 @Getter
-@NoArgsConstructor // <--- THIS is it
+@NoArgsConstructor
 class User {
     private String firstName;
     private String lastName;

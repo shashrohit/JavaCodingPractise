@@ -28,7 +28,6 @@ But we can have any no. of default and static methods.
 Runnable -> run()
 Callable -> call()
 Comparable -> compareTo()
-ActionListener -> actionPerformed()
  */
 @FunctionalInterface
 interface Cab{

@@ -1,0 +1,31 @@
+Convert list of Integer to int array as -
+list.toArray(new Integer[0]); returns Integer[] not int[]
+list.stream().mapToInt(a -> a).toArray();
+
+get str[0] -
+str.substring(0, 1)
+
+convert list<String> to String[] -
+list.toArray(new String[0])
+
+Joining list into a string -
+StringUtils.join(outputList, " ") -> join(Collection var0, String var1)
+OR
+strbuilderobj.append(entry.getKey()).append(" ")
+
+Character.isAlphabetic(char)
+
+StringJoiner joiner = new StringJoiner(" ");
+for(String word: words) joiner.add(word);
+   return joiner.toString();
+
+Comparators can be replaces as -
+al.sort((a,b)-> a.compareTo(b));
+Or
+al.sort(String::compareTo);
+
+Arrays.sort() -> when objects implement comparable OR PRIMITIVE types (Not wrapper)
+Arrays.sort(Comparator)
+Collections.sort() -> when objects implements comparable OR PRIMITIVE types (Not wrapper)
+Collections.sort(Comparator)
+list.sort(Comparator)

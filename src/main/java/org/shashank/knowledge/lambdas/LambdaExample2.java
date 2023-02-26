@@ -5,6 +5,7 @@ interface Math{
     void sum(int a, int b);
 }
 
+@FunctionalInterface
 interface Journey{
     int distance(int source, int dest);
 }

@@ -1,4 +1,4 @@
-package org.shashank.knowledge.methodinference;
+package org.shashank.knowledge.methodreference;
 
 /*
 A method reference is the shorthand syntax for a lambda expression
@@ -16,8 +16,7 @@ If a lambda expression just call a default method of an object
 Then -
 obj::instanceMethod
 
-Type 3: Reference to an instance method of an arbitrary object of a particular type
-If a lambda expression just call an instance method of a  ObjectType
+Type 3: If a lambda expression just call an instance method of a ObjectType
 (obj, args) -> obj.instanceMethod(args)
 Then -
 ObjectType::instanceMethod
@@ -73,7 +72,7 @@ class ComparisonProvider {
     }
 }
 
-public class MethodInference {
+public class MethodReference {
 
     public static void main(String[] args) {
         List<Person> personList = new ArrayList<>();

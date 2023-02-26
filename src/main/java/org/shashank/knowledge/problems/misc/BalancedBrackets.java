@@ -8,6 +8,9 @@ public class BalancedBrackets {
     public static boolean isStringBalanced(String str){
 
 //        Stack<Character> stack = new Stack<>();
+        // Stack is LIFO so always use addFirst
+        // push() Pushes an element onto the stack represented by this deque.
+        //   In other words, inserts the element at the front of this deque.
         Deque<Character> stack
                 = new ArrayDeque<>();
         String openingBrackets = "{[(";

@@ -12,11 +12,12 @@ Stream<T> filter(Predicate<? super T> predicate);
 <R> Stream<R> map(Function<? super T, ? extends R> mapper);
 <R> Stream<R> flatMap(Function<? super T, ? extends Stream<? extends R>> mapper);
 Stream<T> distinct();
+Stream() limit(maxSize)
 Stream<T> sorted();
-limit(maxSize)
 Stream<T> sorted(Comparator<? super T> comparator);
 Stream<T> peek(Consumer<? super T> action);
 Stream concat(Stream1, Stream2);
+IntStream mapToInt(ToIntFunction<? super T> mapper);
 
 Terminal -
 void forEach(Consumer<? super T> action);

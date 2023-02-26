@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.Optional;
 
 /*
+public final class Optional<T>
 Optional is used to handle null pointer exception. This way client will also know what
 variables are mandatory and what are not.
 
@@ -39,7 +40,8 @@ public class OptionalExample {
         System.out.println(newAge);
 
         Optional<Date> doj = Optional.ofNullable(null);
-        Date newDoj = doj.orElseGet(Date::new);
+        Date newDoj = doj.orElseGet(() -> new Date());
+        Date newDoj1 = doj.orElseGet(Date::new);
         System.out.println(newDoj);
     }
 }

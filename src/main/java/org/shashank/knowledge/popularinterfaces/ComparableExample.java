@@ -24,7 +24,6 @@ class Student implements Comparable<Student>{
     @NonNull
     private String lastName;
 
-    @Override
     public int compareTo(Student s) {
         int i = this.firstName.compareTo(s.firstName);
         if (i != 0) {
