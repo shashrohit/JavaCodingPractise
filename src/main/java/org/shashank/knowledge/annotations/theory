@@ -1,0 +1,22 @@
+Annotations are used to add metadata to code. If we want compiler/JVM to treat our
+code specially, we can use them. In compilation stage, comments are removed but annotations
+persist.
+
+Annotations hierarchy -
+Standard & Custom
+Standard are of two types -
+General Purpose (@Override, @Deprecated, @FunctionalInterface, @SuppressWarnings)
+Meta (@Inherited, @Documented, @Target, @Retention, @Repeatable)
+Note - Meta annotations are used to create other annotations.
+
+Types -
+1. Marker -> No values, no members. Ex - @override
+2. Single Value -> Single member/value. Ex - @SuppressedWarnings(value="checked")
+3. Multiple Value -> Multiple values.
+4. Type Annotations -> Can be applied where a type is being used. Ex -  we can annotate
+the return type of method. These are declared annotated with @Target annotation.
+5. Repeating Annotations -> can be applied to a single item more than once.
+For an annotation to be repeatable it must be annotated with the @Repeatable annotation
+
+Every annotation is Java must have Target and retention policy for which we use @Target
+and @Retention annotations.
