@@ -29,3 +29,5 @@ Arrays.sort(Comparator)
 Collections.sort() -> when objects implements comparable OR PRIMITIVE types (Not wrapper)
 Collections.sort(Comparator)
 list.sort(Comparator)
+
+Comparator.reverseOrder()

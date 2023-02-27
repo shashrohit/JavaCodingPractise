@@ -1,0 +1,37 @@
+            Throwable
+                |
+                V
+Exception                   Error
+    |
+    V
+RunTimeException
+
+Example -
+public class ExceptionTest {
+   public static void main(String args[]) {
+      int a[] = new int[2];
+      try {
+         System.out.println("Access element three :" + a[3]);
+      } catch (ArithmeticException |ArrayIndexOutOfBoundsException e) {
+         System.out.println("Exception thrown :" + e);
+      } finally {
+         System.out.println("The finally statement is always executed");
+      }
+   }
+}
+
+throw new NullPointerException("");
+If a method throws an exception without handling it, then it must use throws to indicate
+the same to the caller so that it can handle it by catching it or again using throws.
+
+int method(int[] arr) throws IllegalAccessException
+
+Some exceptions -
+Arithmetic
+IndexOutOfBounds
+IllegalAccess (Access Denied)
+IllegalArguments
+NullPointer
+Interrupted
+RunTime
+ClassCast
