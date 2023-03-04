@@ -43,6 +43,6 @@ public class AddBinaryStrings {
         String s1 = "11";
         String s2 = "1";
 
-        System.out.println(AddBinaryStrings.addBinaryStrings(s1, s2));
+        System.out.println(addBinaryStrings(s1, s2));
     }
 }

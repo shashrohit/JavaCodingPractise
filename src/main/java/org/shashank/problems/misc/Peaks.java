@@ -28,6 +28,6 @@ public class Peaks {
     }
 
     public static void main(String[] args) {
-        Peaks.findPeaks(new int[]{1, 3, 20, 4, 1, 0, 10, 5}).forEach(System.out::println);
+        findPeaks(new int[]{1, 3, 20, 4, 1, 0, 10, 5}).forEach(System.out::println);
     }
 }

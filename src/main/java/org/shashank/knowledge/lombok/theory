@@ -1,6 +1,3 @@
-package org.shashank.knowledge.lombok;
-
-/*
 Getters/Setters and Constructors -
 By adding the @Getter and @Setter annotations, Lombok generates these for all the fields.
 @NoArgsConstructor will lead to an empty constructor generation.
@@ -69,21 +66,5 @@ public String resourceAsString() {
     }
 }
 
-
 Logger -
 @Slf4j @Log @CommonsLog @Log4j @Log4j2 @XSlf4j
-
- */
-
-public class LombokTheory {
-
-    public static void main(String[] args) {
-
-        Book book1 = new Book("Java", "Shashank", 10d);
-        System.out.println(book1.getCost(2));
-
-        Book book = new Book("Java", "Shashank", null);
-        System.out.println(book.getAuthorNote());
-        System.out.println(book.getCost(1));
-    }
-}

@@ -23,4 +23,3 @@ void clear();
 boolean equals(Object o);
 Stream<E> stream()
 Stream<E> parallelStream()
-

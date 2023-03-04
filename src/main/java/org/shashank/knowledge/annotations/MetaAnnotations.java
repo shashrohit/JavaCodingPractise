@@ -51,8 +51,6 @@ public enum RetentionPolicy {
 }
  */
 
-import java.lang.annotation.ElementType;
-
 public class MetaAnnotations {
 
     public static void main(String[] args) {

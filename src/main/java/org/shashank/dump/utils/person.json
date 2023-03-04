@@ -1,0 +1,22 @@
+[
+  {
+  "firstName": "Shashank",
+  "lastName": "Singh",
+  "children": [
+    {
+      "name": "rohit",
+      "age": 10
+    }
+  ]
+},
+{
+  "firstName": "Rohit",
+  "lastName": "Singh",
+  "children": [
+    {
+      "name": "rohit",
+      "age": 10
+    }
+  ]
+}
+]

@@ -24,6 +24,6 @@ public class MaxProductArray {
     }
 
     public static void main(String[] args) {
-        System.out.println(MaxProductArray.maxProduct(new int[]{1, 4, 3, -6, 7, -10}));
+        System.out.println(maxProduct(new int[]{1, 4, 3, -6, 7, -10}));
     }
 }

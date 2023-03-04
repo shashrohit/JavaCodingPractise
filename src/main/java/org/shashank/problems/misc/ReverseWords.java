@@ -29,6 +29,6 @@ public class ReverseWords {
     }
 
     public static void main(String[] args) {
-        System.out.println(ReverseWords.reverseWords("This is sample text"));
+        System.out.println(reverseWords("This is sample text"));
     }
 }

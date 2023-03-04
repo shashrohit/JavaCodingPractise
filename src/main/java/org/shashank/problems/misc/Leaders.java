@@ -21,6 +21,6 @@ public class Leaders {
     }
 
     public static void main(String[] args) {
-        Leaders.findLeaders(new int[]{16, 17, 4, 3, 5, 2}).forEach(System.out::println);
+        findLeaders(new int[]{16, 17, 4, 3, 5, 2}).forEach(System.out::println);
     }
 }

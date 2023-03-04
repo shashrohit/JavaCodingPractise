@@ -1,14 +1,14 @@
 package org.shashank.dump.utils;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
 
-@AllArgsConstructor @Getter @Setter
+@Getter @Setter
 public class Person {
     @NonNull
-    String firstName;
+    public String firstName;
     @NonNull
-    String lastName;
+    public String lastName;
+    public Child []children;
 }

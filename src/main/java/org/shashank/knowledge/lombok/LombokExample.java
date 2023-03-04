@@ -1,0 +1,89 @@
+package org.shashank.knowledge.lombok;
+
+/*
+Getters/Setters and Constructors -
+By adding the @Getter and @Setter annotations, Lombok generates these for all the fields.
+@NoArgsConstructor will lead to an empty constructor generation.
+
+@Getter
+@NoArgsConstructor
+class User {
+    private String firstName;
+    private String lastName;
+    public User(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+}
+
+Lazy Getter -
+Retrieve this data only when it's first needed. In other words, we only get the data when we call
+the corresponding getter the first time. We call this lazy-loading
+ @Getter(lazy = true)
+    private final Map<String, Long> transactions = getTransactions();
+Initializes it to null and generates a getter method which updates the transactions if it was null and then returns it.
+
+Value Classes/Data Transfer Objects (DTOs) -
+@RequiredArgsConstructor
+@Accessors(fluent = true) @Getter
+public class LoginResult {
+    private final @NonNull Instant loginTs;
+    private final @NonNull String authToken;
+    private final @NonNull Duration tokenValidity;
+}
+@Accessors(fluent = true) -> getters will not start with get but just the variable name
+Once we add the @RequiredArgsConstructor annotation, we'll get a constructor for all the
+final fields in the class. Adding @NonNull to attributes makes our constructor check for nullability
+and throw NullPointerExceptions accordingly.
+
+Builder classes -
+@Builder
+public class ApiClientConfiguration {
+    // ... everything else remains the same
+}
+
+ApiClientConfiguration config =
+    ApiClientConfiguration.builder()
+        .host("api.server.com")
+        .port(443)
+        .useHttps(true)
+        .connectTimeout(15_000L)
+        .username("myusername")
+        .password("secret")
+    .build();
+
+Checked Exceptions Burden -
+public void resourceAsString() {
+    try (InputStream is = this.getClass().getResourceAsStream("sure_in_my_jar.txt")) {
+        BufferedReader br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+    } catch (IOException | UnsupportedCharsetException ex) {
+        // If this ever happens, then its a bug.
+        throw new RuntimeException(ex); <--- encapsulate into a Runtime ex.
+    }
+}
+
+@sneakyThrows
+public String resourceAsString() {
+    try (InputStream is = this.getClass().getResourceAsStream("sure_in_my_jar.txt")) {
+        BufferedReader br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+    }
+}
+
+
+Logger -
+@Slf4j @Log @CommonsLog @Log4j @Log4j2 @XSlf4j
+
+ */
+
+public class LombokExample {
+
+    public static void main(String[] args) {
+
+        Book book1 = new Book("Java", "Shashank", 10d);
+        System.out.println(book1.getCost(2));
+
+        Book book = new Book("Java", "Shashank", null);
+        System.out.println(book.getAuthorNote());
+        System.out.println(book.getCost(1));
+    }
+}

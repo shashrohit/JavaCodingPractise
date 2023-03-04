@@ -27,6 +27,6 @@ public class NearestPalindrome {
     }
 
     public static void main(String[] args) {
-        System.out.println(NearestPalindrome.findNearestPalindrome(123456));
+        System.out.println(findNearestPalindrome(123456));
     }
 }

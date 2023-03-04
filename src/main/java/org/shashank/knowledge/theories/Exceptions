@@ -30,7 +30,7 @@ Some exceptions -
 Arithmetic
 IndexOutOfBounds
 IllegalAccess (Access Denied)
-IllegalArguments
+IllegalArgument
 NullPointer
 Interrupted
 RunTime

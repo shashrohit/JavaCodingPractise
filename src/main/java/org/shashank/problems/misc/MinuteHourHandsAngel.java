@@ -25,6 +25,6 @@ public class MinuteHourHandsAngel {
     }
 
     public static void main(String[] args) {
-        System.out.println(MinuteHourHandsAngel.findAngle(14, 45));
+        System.out.println(findAngle(14, 45));
     }
 }

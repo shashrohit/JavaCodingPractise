@@ -19,7 +19,7 @@ public class FirstDuplicate {
     }
 
     public static void main(String[] args) {
-        System.out.println(FirstDuplicate.findFirstDuplicate(new int[]{1, 2, 4, 4, 1, 3, 7, 5, 5, 2}));
+        System.out.println(findFirstDuplicate(new int[]{1, 2, 4, 4, 1, 3, 7, 5, 5, 2}));
     }
 
 }
