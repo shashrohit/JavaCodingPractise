@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /*
@@ -46,6 +47,7 @@ public class ComparableExample {
 
         List<Student> list = Arrays.asList(s1, s2);
         list.sort(Student::compareTo);
+        Collections.sort(list);
         list.forEach(e -> System.out.println(e.getFirstName()));
     }
 }

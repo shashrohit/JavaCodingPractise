@@ -9,21 +9,21 @@ public class Chunks {
 
     public static List<Integer[]> chunks(int[] arr, int chunkSize){
         List<Integer[]> output = new ArrayList<>();
+        int k;
         Integer[] intermediateArr;
         for(int i =0; i < arr.length; i=i+chunkSize){
-            intermediateArr = new Integer[chunkSize];
-            for(int j =0; j< chunkSize; j++){
-                if(i+j <= arr.length-1) intermediateArr[j] = arr[i+j];
+            if(i+chunkSize < arr.length){
+                intermediateArr = new Integer[chunkSize];
+                k = chunkSize;
+            }
+            else{
+                intermediateArr = new Integer[arr.length-i];
+                k = arr.length-i;
+            }
+            for(int j =0; j< k; j++){
+                intermediateArr[j] = arr[i+j];
             }
             output.add(intermediateArr);
-        }
-
-        List<Integer> list;
-        // remove null
-        for(int i=0; i<output.size(); i++){
-            list = new ArrayList<>(Arrays.asList(output.get(i)));
-            list.remove(null);
-            output.set(i, list.toArray(new Integer[0]));
         }
         return output;
     }

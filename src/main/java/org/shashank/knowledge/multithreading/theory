@@ -1,0 +1,10 @@
+Multithreading is a Java feature that allows concurrent execution of
+two or more parts of a program for maximum utilization of CPU.
+
+Threads can be created by using two mechanisms :
+
+Extending the Thread class
+Implementing the Runnable Interface
+
+isAlive()
+join() -> wait for thread to complete

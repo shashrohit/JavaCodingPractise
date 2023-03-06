@@ -31,3 +31,34 @@ Collections.sort(Comparator)
 list.sort(Comparator)
 
 Comparator.reverseOrder()
+
+1)	StringBuffer is synchronized i.e. thread safe. It means two threads can't call
+the methods of StringBuffer simultaneously.	StringBuilder is non-synchronized i.e.
+not thread safe. It means two threads can call the methods of StringBuilder simultaneously.
+2)	StringBuffer is less efficient than StringBuilder.
+StringBuilder is more efficient than StringBuffer.
+
+StringBuilder sb = new StringBuilder();
+StringBuilder sb = new StringBuilder(new String("Shashank");
+
+append(char)
+append(string)
+charAt(int)
+deleteCharAt()
+insert(int, string)
+indexOf(string)
+
+Synchronised is used as a lock. As soon as thread enters a synchronized block,
+it takes a lock and other threads trying to enter the same block are put to sleep.
+Also any changes made are saved directly in memory (not in cache).
+
+Volatile gives only the visibility feature of synchronised. Any changes made are made
+to main memory. Volatile variables are never cached.
+
+Transient variables are not serialized, instead their default value is saved.
+Use -
+Security - do not serialize passwords
+Redundant - values that can be calculated by other means Ex - age using DOB.
+
+Note - Transient must not be used with static or final as its ignored.
+
