@@ -1,4 +1,4 @@
-package org.shashank.dump;
+package org.shashank.knowledge.staticconcept;
 
 public class Apple {
 
@@ -27,6 +27,11 @@ public class Apple {
 
         public Integer m1(){
             return 2;
+        }
+
+        public static void main(String[] args) {
+            SubApple apple = new SubApple();
+            System.out.println(apple.m1());
         }
 
     }

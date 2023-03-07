@@ -27,11 +27,30 @@ the same to the caller so that it can handle it by catching it or again using th
 int method(int[] arr) throws IllegalAccessException
 
 Some exceptions -
-Arithmetic
-IndexOutOfBounds
-IllegalAccess (Access Denied)
-IllegalArgument
-NullPointer
+Checked Exceptions (Compile time so compiler forces to catch it or use throws)
+ClassNotFound
 Interrupted
-RunTime
-ClassCast
+IOException
+FileNotFound
+
+Unchecked Exceptions (Run time)
+ClassCastException
+Arithmetic
+NullPointer
+ArrayIndexOutOfBounds
+IllegalArgumentException
+IllegalArgumentException
+
+Note that we can group only un-related exceptions together. That means it’s illegal
+to group exceptions which have parent-child relationship.
+
+Compiler error -
+catch (FileNotFoundException | IOException ex)
+
+Compiler error -
+ catch (IOException ex) {
+    System.err.println("Find not found");
+} catch (FileNotFoundException ex) {
+    System.err.println("Error reading file");
+}
+

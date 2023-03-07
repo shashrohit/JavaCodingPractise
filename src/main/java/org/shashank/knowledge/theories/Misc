@@ -62,3 +62,12 @@ Redundant - values that can be calculated by other means Ex - age using DOB.
 
 Note - Transient must not be used with static or final as its ignored.
 
+Car c = new Vehicle();
+Not allowed -> sub class type variable cannot reference superclass object
+
+Only public and protected members are inherited. Private members are not inherited.
+Default members are inherited only if both classes are in the same package.
+Constructors are not inherited.
+
+A utility class consists of only static members and a private constructor. Hence it
+cannot be instantiated.
