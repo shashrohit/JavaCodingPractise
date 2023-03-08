@@ -3,6 +3,7 @@ package org.shashank.knowledge.multithreading;
 
 class MyThread extends Thread{
 
+    @Override
     public void run(){
         try{
             System.out.println("Thread " + Thread.currentThread().getName() + " is running");

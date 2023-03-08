@@ -24,4 +24,3 @@ Note - The finalize() method is called by Garbage Collector, not JVM.
 However, Garbage Collector is one of the modules of JVM.
 Note - If an uncaught exception is thrown by the finalize() method,
 the exception is ignored.
-

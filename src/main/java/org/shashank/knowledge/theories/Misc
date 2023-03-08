@@ -2,7 +2,14 @@ Convert list of Integer to int array as -
 list.toArray(new Integer[0]); returns Integer[] not int[]
 list.stream().mapToInt(a -> a).toArray();
 
-get str[0] -
+Converting int array to List of Integers
+int[] arr = {10, 20, 30, 15, 40, 50, 50, 70};
+List<Integer> output = Arrays.stream(arr)
+        .filter(a -> a%2==0) // optional
+        .boxed()
+        .collect(Collectors.toList());
+
+get str[0] as String -
 str.substring(0, 1)
 
 convert list<String> to String[] -
@@ -24,10 +31,10 @@ al.sort((a,b)-> a.compareTo(b));
 Or
 al.sort(String::compareTo);
 
-Arrays.sort() -> when objects implement comparable OR PRIMITIVE types (Not wrapper)
-Arrays.sort(Comparator)
-Collections.sort() -> when objects implements comparable OR PRIMITIVE types (Not wrapper)
-Collections.sort(Comparator)
+Arrays.sort(arr) -> when objects implement comparable OR PRIMITIVE types (Not wrapper)
+Arrays.sort(arr, Comparator)
+Collections.sort(collection) -> when objects implements comparable OR PRIMITIVE types (Not wrapper)
+Collections.sort(collection, Comparator)
 list.sort(Comparator)
 
 Comparator.reverseOrder()

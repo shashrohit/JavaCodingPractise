@@ -72,7 +72,7 @@ class ComparatorExample
         list.forEach(m -> System.out.println(m.getName()));
 
         NameCompare nameCompare = new NameCompare();
-        Collections.sort(list, nameCompare);
+        Collections.sort(list, nameCompare::compare);
         list.forEach(m -> System.out.println(m.getName()));
 
         // Uses Comparable to sort by year

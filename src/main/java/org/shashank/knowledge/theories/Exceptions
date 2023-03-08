@@ -28,7 +28,6 @@ int method(int[] arr) throws IllegalAccessException
 
 Some exceptions -
 Checked Exceptions (Compile time so compiler forces to catch it or use throws)
-ClassNotFound
 Interrupted
 IOException
 FileNotFound
@@ -39,7 +38,7 @@ Arithmetic
 NullPointer
 ArrayIndexOutOfBounds
 IllegalArgumentException
-IllegalArgumentException
+IllegalAccessException
 
 Note that we can group only un-related exceptions together. That means it’s illegal
 to group exceptions which have parent-child relationship.

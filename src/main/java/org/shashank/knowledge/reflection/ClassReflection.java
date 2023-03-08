@@ -4,7 +4,7 @@ import java.lang.reflect.Method;
 
 /*
 Method[] getMethods() - only public
-Method[] getMethods() - all
+Method[] getDeclaredMethods() - all
 Method getMethod(String name)
 Method getDeclaredMethod(String name)
 Field[] getFields()

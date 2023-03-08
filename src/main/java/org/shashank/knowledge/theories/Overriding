@@ -12,7 +12,7 @@ Allowed -
     protected void move() throws IOException
     protected void move() throws FileNotFoundException
 
-Rule #7:Use the super keyword to invoke the overridden method from a subclass.
+Rule #7: Use the super keyword to invoke the overridden method from a subclass.
  protected void move() {
         super.move();
  }
