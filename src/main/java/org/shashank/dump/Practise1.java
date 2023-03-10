@@ -1,39 +1,27 @@
 package org.shashank.dump;
 
-import java.io.IOException;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.List;
 
-class Animal{
-    public static void move() throws IOException, InterruptedException {
+class Super{
 
-    }
+
 }
 
-class Dog extends Animal{
-    public static void move() throws IOException, IllegalArgumentException{
+class Sub extends Super{
 
-    }
 }
 
 public class Practise1 {
 
-    public static int fibonacci(int n){
-        if(n<=1) return n;
-        return fibonacci((n-1)) + fibonacci(n-2);
-    }
+
     public static void main(String[] args) {
+        int[] arr = { 1, 1, 4, 4, 4, -10, 8 };
 
-        HashMap<String, Integer> map = new HashMap<>();
+        List<Super> list1 = new ArrayList<>();
+        List<Sub> list2 = new ArrayList<>();
 
-        // enter data into hashmap
-        map.put("Math", 98);
-        map.put("Data Structure", 85);
-        map.put("Database", 91);
-        map.put("Java", 95);
-        map.put("Operating System", 79);
-        map.put("Networking", 80);
-
-        int[] arr = {0,0,1,1,1,2,2,3,3,4};
+        list1.add(new Sub());
+//        list2.add(new Super());
     }
 }

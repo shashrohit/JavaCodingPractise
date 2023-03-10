@@ -1,0 +1,49 @@
+Need -
+Repetitive work in Brute force can be optimized.
+
+Identification -
+All below must match -
+1. Question on arrays and strings
+2. sub-array and substring
+3. fixed window size given or no size given (but condition given)
+
+Types of sliding window -
+Fixed size window
+Variable size window
+
+
+Fixed size format -
+k = window size
+start = 0, end = 0
+while(end<length){
+    calculations
+    if(end-start+1 < k){
+        end +=1
+    }
+    else if(end-start+1 == k){
+        answer
+        slide window/remove calculations for start
+        start += 1
+        end +=1
+    }
+}
+
+Variable size format -
+k = condition
+start =end = 0
+while(end<length){
+    calculation
+    if(condition < k){
+        end +=1
+    }
+    else if(condition == k){
+        answer
+        end +=1
+    }else if(condition > k){
+        while(condition > k){
+            slide window/remove calculations for start
+            start +=1
+        }
+        end +=1
+    }
+}
