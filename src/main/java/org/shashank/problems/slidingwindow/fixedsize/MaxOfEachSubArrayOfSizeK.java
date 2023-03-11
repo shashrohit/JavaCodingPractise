@@ -20,7 +20,6 @@ public class MaxOfEachSubArrayOfSizeK {
 
     public static void maxInAllSubArraysWrong(int[] arr, int size){
 
-        List<Integer> output = new ArrayList<>();
         int start = 0, end = 0;
         int currentMax = Integer.MIN_VALUE;
         while(end< arr.length){
@@ -61,10 +60,9 @@ public class MaxOfEachSubArrayOfSizeK {
     }
 
     public static void main(String[] args) {
-//        maxInAllSubArraysWrong(new int[]{4, 3, -1, -3, 5}, 3);
+        maxInAllSubArraysWrong(new int[]{4, 3, -1, -3, 5}, 3);
+        System.out.println("Correct answer - ");
         maxInAllSubArrays(new int[]{4, 3, -1, -3, 5}, 3);
-
-
 
     }
 }

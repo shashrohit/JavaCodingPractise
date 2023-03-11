@@ -34,8 +34,8 @@ iterator()
 getFirst()
 getLast()
 For stack implemented by Deque -
-push()
-pop()
+push() is same as addFirst()
+pop() is same as removeFirst()
 
 Note - Queue extended by Dequeue interface
 Dequeue implemented by ArrayDeque

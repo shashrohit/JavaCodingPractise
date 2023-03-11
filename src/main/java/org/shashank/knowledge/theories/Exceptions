@@ -52,4 +52,3 @@ Compiler error -
 } catch (FileNotFoundException ex) {
     System.err.println("Error reading file");
 }
-

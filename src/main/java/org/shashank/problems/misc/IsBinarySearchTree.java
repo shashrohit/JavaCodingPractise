@@ -41,9 +41,9 @@ class BinaryTree1 {
 		/* otherwise check the subtrees recursively
 		tightening the min/max constraints */
         // Allow only distinct values
-        return (
+        return
                 isBSTUtil(node.left, min, node.data - 1)
-                        && isBSTUtil(node.right, node.data + 1, max));
+                        && isBSTUtil(node.right, node.data + 1, max);
     }
 }
 

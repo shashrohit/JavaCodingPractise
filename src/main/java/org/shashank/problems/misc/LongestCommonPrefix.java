@@ -17,12 +17,14 @@ public class LongestCommonPrefix {
             if(firstString.charAt(i) == lastString.charAt(i))
             {
                 longestPrefix += firstString.charAt(i);
-                i+=1;
+            }else{
+                break;
             }
+            i+=1;
         }
         return longestPrefix;
     }
     public static void main(String[] args) {
-        System.out.println(longestCommonPrefix(new String[]{"c","acc","ccc"}));
+        System.out.println(longestCommonPrefix(new String[]{"geeksforgeeks", "geeks", "geek", "geezer"}));
     }
 }

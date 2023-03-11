@@ -15,7 +15,7 @@ Explanation:
 Arr3  + Arr4 =700
 which is maximum.
  */
-public class SubArrayWithSizeKAndExactSum {
+public class SubArrayWithSizeKAndMaxSum {
     private static int maxSumSubArray(int[] arr, int size){
 
         int start=0, end=0, max_sum=Integer.MIN_VALUE, current_max=0;

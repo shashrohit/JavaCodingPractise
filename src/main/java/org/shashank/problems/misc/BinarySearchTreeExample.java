@@ -10,7 +10,7 @@ class BTreeNode {
     }
 }
 
-class BinaryTree {
+class BinarySearchTree {
     BTreeNode root;
 
     public void addNode(int data) {
@@ -51,9 +51,9 @@ class BinaryTree {
     }
 }
 
-public class BinaryTreeExample {
+public class BinarySearchTreeExample {
     public static void main(String[] args) {
-        BinaryTree tree = new BinaryTree();
+        BinarySearchTree tree = new BinarySearchTree();
 
         tree.addNode(50);
         tree.addNode(25);

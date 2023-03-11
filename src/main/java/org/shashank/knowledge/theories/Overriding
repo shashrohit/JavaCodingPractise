@@ -6,7 +6,7 @@ Rule #4: The overriding method must have same return type (or subtype).
 Rule #5: The overriding method must not have more restrictive access modifier.
 (Private, default, protected, public)
 Rule #6: The overriding method must not throw new or broader checked exceptions.
-It can throw any unchecked exceptions
+It can throw any unchecked exceptions.
 
 Allowed -
     protected void move() throws IOException

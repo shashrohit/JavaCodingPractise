@@ -1,0 +1,16 @@
+How to overload -
+The number of parameters in two methods.
+The data types of the parameters of methods.
+The Order of the parameters of methods.
+
+Rules -
+1. We cannot overload two methods in Java if they differ only by static keyword
+2. The first rule to overload a method in Java is to change the method signature.
+3. The return type of method is not part of the method signature, so just changing
+the return type will not overload a method in Java.  In fact, just changing the
+return type will result in a compile-time error.
+4. We can overload main(). But JVM calls main() method which receives string array
+as arguments only.
+5. Method Overloading and Type Promotion - One type is promoted to another implicitly
+if no matching datatype is found.
+
