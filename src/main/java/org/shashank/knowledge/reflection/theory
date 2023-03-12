@@ -1,4 +1,5 @@
-The name reflection is used to describe code which is able to inspect other code.
+Reflection can be used to load the Java class, call its methods or analysis
+the class at runtime.
 
 Uses -
 1. For example, if have an object of an unknown type in Java, and you would like
@@ -18,3 +19,9 @@ tagged with the @Test annotation, and will then call them when running the unit 
 Drawbacks of Reflection
 1. Performance Overhead
 2. Insecure exposure of Internals
+
+Automation -
+1. Keyword driven
+2. PageFactory.initElements(driver, Form.class)
+Second argument is of type Class
+

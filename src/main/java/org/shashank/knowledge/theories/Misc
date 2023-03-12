@@ -54,6 +54,7 @@ charAt(int)
 deleteCharAt()
 insert(int, string)
 indexOf(string)
+toString()
 
 Synchronised is used as a lock. As soon as thread enters a synchronized block,
 it takes a lock and other threads trying to enter the same block are put to sleep.

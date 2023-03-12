@@ -1,0 +1,81 @@
+https://www.guru99.com/page-object-model-pom-page-factory-in-selenium-ultimate-guide.html
+https://www.softwaretestinghelp.com/qa-interview-questions/
+
+Strings -
+Are Anagrams -> create map & reduce map (Only solution)
+All Uncommon words -> Use set to remove duplicates first
+Matching chars -> simple char indexOf
+Remove Duplicates - LinkedHashSet in O(n) or sort + compare for O(nlogn)
+
+Misc -
+RemoveDuplicatesSortedArray using O(1) auxillary space - start with i as 1 and Index maintains first duplicate element.
+ParkingLot
+
+Arrays -
+SortOneArrayUsingAnother
+chunks will use intermediary arraylist
+Remove Element by index
+TripletThatSumToGivenValue
+
+SortHashMap -> do not use stream(), use Collections.sort() or list.sort()
+
+Arrays.equals(long[] a, long[] a2)
+
+For level of testing required -
+Cyclomatic complexity = (No of edges - no of nodes)+2
+https://www.geeksforgeeks.org/cyclomatic-complexity/
+
+Statements in a program are represented as nodes, and control paths from one statement to another are represented by Edges.
+
+If the CC <=15 – Basic sanity test
+If the CC is between 16 and 30 – Length Testing
+If the CC is between 31 and 50 – Breadth testing
+If the CC >50 – It’s a chaotic functionality and needs further decomposition
+
+Comparator interface does not allowed static compare method so you always need object of class.
+
+How do you deal with scalability issues?
+1. Use horizontal scaling: Horizontal scaling means adding more instances of the application, rather than just increasing the resources
+of a single instance.
+2. Use caching and content delivery networks (CDNs): Caching frequently accessed data and using CDNs to distribute static content
+can help to reduce the load on the application servers and improve performance for users.
+3. Optimize database performance: To improve database performance, consider using database sharding, which distributes data across
+multiple servers, or using a NoSQL database that can handle large amounts of unstructured data.
+4. Use asynchronous processing
+5. Monitor and analyze performance
+6. Design for scalability
+
+What is the best solution to figure out the highest floor from which an egg can be dropped without breaking it?
+Use binary search tree. FId mid floor and drop it. If it breaks, you move to mid of current and lowesr floor.
+If it does not break, move to mid of current and highest floor. Repeat.
+
+How many children are born daily? -
+US population: 320MLife expectation: 80y
+HP: Population equally spread for every age -> 0-1 years old: 320M/80 = 4M
+Baby born in a day: 4M/365 = 11k
+
+How many rounds would it take to choose the winner among the 25 teams in a single-elimination tournament?
+N-1 rounds
+
+For stack implemented by Deque -
+push() is same as addFirst()
+pop() is same as removeFirst()
+
+Reflection in Automation -
+Automation -
+1. Keyword driven
+2. PageFactory.initElements(driver, Form.class);
+Second argument is of type Class.
+Also,
+Class abc = Class.forName("ABC");
+
+Test plan for a pen
+
+We cannot overload two methods in Java if they differ only by static keyword
+
+public interface WebDriver extends SearchContext {..}
+
+public interface SearchContext {
+    List<WebElement> findElements(By by);
+    WebElement findElement(By by);
+}

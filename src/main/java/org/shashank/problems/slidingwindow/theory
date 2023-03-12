@@ -28,8 +28,8 @@ while(end<length){
 }
 
 Variable size format -
-k = condition
-start =end = 0
+k = condition value
+start = end = 0
 while(end<length){
     calculation
     if(condition < k){

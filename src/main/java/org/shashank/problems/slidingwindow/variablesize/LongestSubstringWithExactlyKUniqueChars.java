@@ -16,7 +16,7 @@ substring with K distinct characters.
  */
 public class LongestSubstringWithExactlyKUniqueChars {
 
-    public static String findSubstring(String str, int size){
+    public static String findSubstringWithKUniqueChars(String str, int size){
 
         int end = 0, start = 0;
         String longestSubstring = "";
@@ -50,7 +50,7 @@ public class LongestSubstringWithExactlyKUniqueChars {
 
 
     public static void main(String[] args) {
-        System.out.println(findSubstring("aabacbebebe", 3));
+        System.out.println(findSubstringWithKUniqueChars("aabacbebebe", 3));
     }
 
 
