@@ -1,0 +1,43 @@
+Java 7 came up with Objects class that has 9 static utility methods for operating on objects.
+These utilities include null-safe methods for computing the hash code of an object,
+returning a string for an object, and comparing two objects.
+
+1. public static String toString(Object o)
+Returns :
+the result of calling toString() method for a non-null argument and
+"null" for a null argument
+
+2. public static String toString(Object o, String nullDefault)
+Returns :
+the result of calling toString() method on the first argument if it is not null and
+the second argument otherwise.
+
+3. public static boolean equals(Object a,Object b)
+Returns :
+if both arguments are null, true is returned and if exactly one argument is null, false is returned.
+Otherwise, equality is determined by using the equals() method of the first argument.
+
+4. public static boolean deepEquals(Object a,Object b)
+Returns :
+Two null values are deeply equal. If both arguments are arrays, the algorithm in Arrays.deepEquals is used
+to determine equality. Otherwise, equality is determined by using the equals method of the first argument.
+
+5. public static  T requireNonNull(T obj)
+Returns :
+obj if not null
+Throws:
+NullPointerException - if obj is null
+
+6. public static  T requireNonNull(T obj, String message)
+Returns :
+obj if not null
+Throws:
+NullPointerException with detail message - if obj is null
+
+7. public static  int compare(T a, T b, Comparator c)
+Returns :
+0 if the arguments are identical and c.compare(a, b) otherwise.
+
+8. public static boolean Objects.isNull(Object o)
+
+9. public static boolean Objects.nonNull(Object o)
