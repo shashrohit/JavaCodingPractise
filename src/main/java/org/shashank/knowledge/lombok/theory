@@ -1,3 +1,5 @@
+No boilerplate code
+
 Getters/Setters and Constructors -
 By adding the @Getter and @Setter annotations, Lombok generates these for all the fields.
 @NoArgsConstructor will lead to an empty constructor generation.

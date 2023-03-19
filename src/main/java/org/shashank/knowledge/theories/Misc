@@ -79,3 +79,12 @@ Constructors are not inherited.
 
 A utility class consists of only static members and a private constructor. Hence it
 cannot be instantiated.
+
+SLF4J - The Simple Logging Facade for Java (SLF4J) serves as a simple facade or abstraction
+for various logging frameworks (e.g. java.util.logging, logback, log4j) allowing the end user to
+plug in the desired logging framework at deployment time. It is not itself a logging library,
+but a generic interface to one of many logging libraries.
+
+Log4j 1.2 - Welcome to Apache log4j, a logging library for Java.
+Logback - Logback is intended as a successor to the popular log4j project, picking up where log4j leaves off.
+Log4j 2 - Apache Log4j 2 is an upgrade to Log4j that provides significant improvements over its predecessor.

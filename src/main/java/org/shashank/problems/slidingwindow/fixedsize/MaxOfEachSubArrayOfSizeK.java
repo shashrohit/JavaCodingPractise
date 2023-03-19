@@ -60,7 +60,7 @@ public class MaxOfEachSubArrayOfSizeK {
     }
 
     public static void main(String[] args) {
-        maxInAllSubArraysWrong(new int[]{4, 3, -1, -3, 5}, 3);
+//        maxInAllSubArraysWrong(new int[]{4, 3, -1, -3, 5}, 3);
         System.out.println("Correct answer - ");
         maxInAllSubArrays(new int[]{4, 3, -1, -3, 5}, 3);
 
