@@ -20,8 +20,8 @@ Drawbacks of Reflection
 1. Performance Overhead
 2. Insecure exposure of Internals
 
-Automation -
+Reflections in Automation -
 1. Keyword driven
-2. PageFactory.initElements(driver, Form.class)
-Second argument is of type Class
-
+2. PageFactory.initElements(driver, Form.class); -> Second argument is of type Class.
+Also,
+Class abc = Class.forName("ABC");

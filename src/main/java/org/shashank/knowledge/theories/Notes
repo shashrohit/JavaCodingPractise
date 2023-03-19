@@ -8,7 +8,8 @@ Matching chars -> simple char indexOf
 Remove Duplicates - LinkedHashSet in O(n) or sort + compare for O(nlogn)
 
 Misc -
-RemoveDuplicatesSortedArray using O(1) auxillary space - start with i as 1 and Index maintains first duplicate element.
+RemoveDuplicatesSortedArray using O(1) auxillary space - start with i as 1 and Index maintains
+first duplicate element.
 ParkingLot
 
 Arrays -
@@ -17,16 +18,21 @@ chunks will use intermediary arraylist
 Remove Element by index
 TripletThatSumToGivenValue
 
+Fixed -
+When it says, find something for "each" subArray. We need a collection. Ex - deque, list.
+Use StringBuilder in countOccurrences
+
+Variable -
+Unique and Non-repeating - use map and use map.size() as condition
+
 SortHashMap -> do not use stream(), use Collections.sort() or list.sort()
+Merge the overlapping intervals of an array and return a new output array.
 
-Arrays.equals(long[] a, long[] a2)
-
-For level of testing required -
+For level of testing -
 Cyclomatic complexity = (No of edges - no of nodes)+2
 https://www.geeksforgeeks.org/cyclomatic-complexity/
-
-Statements in a program are represented as nodes, and control paths from one statement to another are represented by Edges.
-
+Statements in a program are represented as nodes, and control paths from one statement to
+another are represented by Edges.
 If the CC <=15 – Basic sanity test
 If the CC is between 16 and 30 – Length Testing
 If the CC is between 31 and 50 – Breadth testing
@@ -35,22 +41,26 @@ If the CC >50 – It’s a chaotic functionality and needs further decomposition
 Comparator interface does not allowed static compare method so you always need object of class.
 
 How do you deal with scalability issues?
-1. Use horizontal scaling: Horizontal scaling means adding more instances of the application, rather than just increasing the resources
-of a single instance.
-2. Use caching and content delivery networks (CDNs): Caching frequently accessed data and using CDNs to distribute static content
-can help to reduce the load on the application servers and improve performance for users.
-3. Optimize database performance: To improve database performance, consider using database sharding, which distributes data across
-multiple servers, or using a NoSQL database that can handle large amounts of unstructured data.
+1. Use horizontal scaling: Horizontal scaling means adding more instances of the application,
+    rather than just increasing the resources of a single instance.
+2. Use caching and content delivery networks (CDNs): Caching frequently accessed data and using
+    CDNs to distribute static content can help to reduce the load on the application servers and
+    improve performance for users.
+3. Optimize database performance: Consider using database sharding, which distributes data across
+    multiple servers, or using a NoSQL database that can handle large amounts of unstructured data.
 4. Use asynchronous processing
 5. Monitor and analyze performance
 6. Design for scalability
 
-What is the best solution to figure out the highest floor from which an egg can be dropped without breaking it?
-Use binary search tree. FId mid floor and drop it. If it breaks, you move to mid of current and lowesr floor.
+What is the best solution to figure out the highest floor from which an egg can be dropped
+without breaking it?
+Use binary search tree. Find mid floor and drop it.
+If it breaks, you move to mid of current and lowest floor.
 If it does not break, move to mid of current and highest floor. Repeat.
 
 How many children are born daily? -
-US population: 320MLife expectation: 80y
+US population: 320M
+Life expectation: 80y
 HP: Population equally spread for every age -> 0-1 years old: 320M/80 = 4M
 Baby born in a day: 4M/365 = 11k
 
@@ -69,13 +79,25 @@ Second argument is of type Class.
 Also,
 Class abc = Class.forName("ABC");
 
-Test plan for a pen
-
 We cannot overload two methods in Java if they differ only by static keyword
 
 public interface WebDriver extends SearchContext {..}
-
 public interface SearchContext {
     List<WebElement> findElements(By by);
     WebElement findElement(By by);
 }
+
+How will you survive on a desert isle while waiting for rescue?
+Find a source of drinking water.
+Find/build a shelter.
+Build a fire.
+Create rescue signals.
+Find a source of food.
+Create tools for catching food.
+Fashion weapons for self defense.
+Create a raft to leave the island.
+
+Thread Safety -
+A piece of code is thread-safe if it functions correctly during simultaneous execution by multiple threads.”
+It must satisfy the need for multiple threads to access the same shared data and the need for a
+shared piece of data to be accessed by only one thread at any given time.
